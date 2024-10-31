@@ -1,0 +1,12 @@
+<div class="wisata-container">
+  <h1>Wisata Menarik Lainnya</h1>
+  <p class="intro-text">
+    Jelajahi destinasi menarik yang penuh dengan pesona alam dan kekayaan budaya nusantara.
+  </p>
+
+  <div class="wisata-card" *ngFor="let wisata of wisataList">
+    <img [src]="wisata.image" alt="{{ wisata.name }}" class="wisata-image" />
+    <h3>{{ wisata.name }}</h3>
+    <p>{{ wisata.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.wisata-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.wisata-card {
+  background: #fff;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wisata-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h3 {
+  color: #333;
+  margin-top: 1rem;
+}
+
+p {
+  color: #666;
+}
