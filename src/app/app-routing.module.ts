@@ -1,10 +1,25 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { BerandaComponent } from './beranda/beranda.component';
+import { WisataReligiComponent } from './wisata-religi/wisata-religi.component';
+import { LayananComponent } from './layanan/layanan.component';
+import { HubungiKamiComponent } from './hubungi-kami/hubungi-kami.component';
+import { WisataMenarikComponent } from './wisata-menarik/wisata-menarik.component';
+
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'religious-tourism', component: ReligiousTourismComponent },
-  { path: 'other-attractions', component: OtherAttractionsComponent },
+  { path: '', redirectTo: '/beranda', pathMatch: 'full' },
+  { path: 'beranda', component: BerandaComponent },
+  { path: 'wisata-religi', component: WisataReligiComponent },
+  { path: 'layanan', component: LayananComponent },
+  { path: 'hubungi-kami', component: HubungiKamiComponent },
+  { path: 'wisata-menarik', component: WisataMenarikComponent },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
