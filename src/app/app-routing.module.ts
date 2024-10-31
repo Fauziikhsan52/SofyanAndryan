@@ -1,3 +1,10 @@
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'religious-tourism', component: ReligiousTourismComponent },
+  { path: 'other-attractions', component: OtherAttractionsComponent },
+];
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
