@@ -1,0 +1,7 @@
+"styles": [
+  "src/styles.css",
+  "src/assets/css/clean-blog.css"
+],
+"scripts": [
+  "src/assets/js/clean-blog.js"
+]
